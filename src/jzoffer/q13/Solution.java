@@ -21,6 +21,7 @@ public class Solution {
             queue.add(new int[]{x[0] + 1, x[1], sumDigit(x[0] + 1), sumDigit(x[1])});
         }
         return count;
+        
     }
     private int sumDigit(int num) {
         return num/100 + (num%100)/10 + num%10;
